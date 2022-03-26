@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "sourceMap": true,
+    "isolatedModules": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "lib": ["es6", "es7", "esnext", "dom"]
+  },
+  "exclude": ["lib", "node_modules", "docs", "generated", "examples"]
+}
